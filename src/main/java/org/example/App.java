@@ -1,13 +1,11 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import storage.Storage;
+
+import static service.Service.init;
+
+public class App {
+    public static void main( String[] args ) {
+        init(new Storage());
     }
 }
